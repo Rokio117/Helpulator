@@ -7,7 +7,54 @@
   </head>
   <body>
     <h1>Helpulator</h1>
-    <br></br>
-    <p>Helpulator is a calculator designed to help you train your mental math skills. Enter your equation, enter your guess, and see if you are correct. If you get it wrong Helpulator will give you a tip for next time!</p>
+    
+    <form>
+      <div id="equation" class="inputDisplay">
+        <span id="display">
+            0
+        </span>
+      </div>
+      <div class="label">Your Guess</div>
+      <div id="inputContainer">
+        <input type="number" id="guessInput" class="inputDisplay">
+      </input>
+    </div>
+      <div class="label">Results and Tips</div>
+      <div id="feedback"></div>
+      <div id="calculatorShell">
+        <div class="calculatorRow">
+          <button id="seven" class="numberButton calcButton" value="7">7</button>
+          <button id="eight" class="numberButton calcButton" value="8">8</button>
+          <button id="nine" class="numberButton calcButton" value="9">9</button>
+          <button id="divide" class="operationButton calcButton" value="/">÷</button>
+        </div>
+        
+        <div class="calculatorRow">
+          <button id="four" class="numberButton calcButton" value="4">4</button>
+          <button id="five" class="numberButton calcButton" value="5">5</button>
+          <button id="six" class="numberButton calcButton" value="6">6</button>
+          <button id="multiply" class="operationButton calcButton" value="7">×</button>
+        </div>
+       
+        <div class="calculatorRow">
+          <button id="one" class="numberButton calcButton" value="1">1</button>
+          <button id="two" class="numberButton calcButton" value="2">2</button>
+          <button id="three" class="numberButton calcButton" value="3">3</button>
+          <button id="subtract" class="operationButton calcButton" value="4">-</button>
+        </div>
+        <div class="calculatorRow">
+          <button id="zero" class="numberButton calcButton" value="0">0</button>
+          <button id="erase" class="operationButton calcButton">AC</button>
+          <button type ="submit" id="equals" class="operationButton calcButton">=</button>
+          <button id="add" class="operationButton calcButton">+</button>
+        </div>
+      </div>
+    </form>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
   </body>
 </html>
